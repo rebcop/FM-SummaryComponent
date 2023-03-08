@@ -27,9 +27,9 @@ Users should be able to:
 ### Screenshot
 
 Desktop Solution Screenshot:
-![Desktop Screenshot of Solution](./assets/images/desktop-solution.PNG.jpg)
+![Desktop Screenshot of Solution](./assets/images/desktop-solution.PNG)
 Mobile Solution Screenshot:
-![Desktop Screenshot of Solution](./assets/images/mobile-solution.PNG.jpg)
+![Desktop Screenshot of Solution](./assets/images/mobile-solution.PNG)
 
 ### Links
 
