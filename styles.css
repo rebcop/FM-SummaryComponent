@@ -1,0 +1,249 @@
+/* SET VARIABLES */
+:root {
+    
+    --reaction-txt: hsl(0, 100%, 67%);
+    --memory-txt: hsl(39, 100%, 56%);
+    --verbal-txt: hsl(166, 100%, 37%);
+    --visual-txt: hsl(234, 85%, 45%);
+
+    --reaction-bg: hsl(0, 100%, 97%);
+    --memory-bg: hsl(39, 100%, 96%);
+    --verbal-bg: hsl(166, 100%, 97%);
+    --visual-bg: hsl(234, 85%, 95%);
+
+    --result-bg1-grad: hsl(252, 100%, 67%);
+    --result-bg2-grad: hsl(241, 81%, 54%);
+
+    --circle-bg1-grad: hsla(256, 72%, 46%, 1);
+    --circle-bg2-grad: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* REST PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.results {
+    background-image: linear-gradient(var(--result-bg1-grad),var(--result-bg2-grad)) ;
+    color: var(--white);
+    border-radius: 0px 0px 30px 30px;
+    padding: 1.6rem;
+    height: 22.25rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.1rem;
+    width: 100%;
+}
+
+.final-score {
+    background-image: linear-gradient(var(--circle-bg1-grad),var(--circle-bg2-grad));
+    border-radius: 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin: .5rem;
+    width: 8rem;
+    height: 8rem;
+
+}
+
+h1 {
+    max-width: 16rem;
+    font-size: 1rem;
+    color: var(--light-lavender);
+}
+
+.result-score {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+
+}
+
+p {
+    max-width: 16rem;
+    font-size: 1rem;
+    color: var(--light-lavender);
+}
+
+/* SUMMARY STYLING - GENERAL */
+
+.summary {
+    width: 100%;
+    padding: .7rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.summary h2 {
+    color: var(--dark-gray-blue);
+    font-size: 1.25rem;
+    padding: .6rem 0;
+}
+
+.categories {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-weight:700;
+    height:3.5rem;
+}
+
+.group {
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+}
+
+.score {
+    color: var(--dark-gray-blue);
+}
+
+.score-max {
+    color: var(--light-lavender);
+}
+
+button {
+    background-color: var(--dark-gray-blue);
+    border: none;
+    width: 100%;
+    border-radius: 1.5rem;
+    height: 3rem;
+    color: var(--pale-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    margin:.5rem;
+}
+
+/* SUMMARY STYLING SPECIFIC */
+
+.reaction {
+    background-color: var(--reaction-bg);
+    color: var(--reaction-txt);
+}
+
+.memory {
+    background-color: var(--memory-bg);
+    color: var(--memory-txt);
+}
+
+.verbal {
+    background-color: var(--verbal-bg);
+    color: var(--verbal-txt);
+}
+
+.visual {
+    background-color: var(--visual-bg);
+    color: var(--visual-txt);
+}
+
+
+/* FOOTER STYLING */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    main {
+        flex-flow: row nowrap;
+        box-shadow: 0rem 2rem 3rem var(--light-lavender);
+        height: 32rem;
+        border-radius: 2rem;
+        justify-content: center;
+        width: 46rem;
+    }
+
+    
+    .results {
+        border-radius: 2rem;
+        height: 32rem;
+        gap: 1.7rem;
+        padding-top: 2.5rem;
+
+    }
+
+    .final-score {
+        height: 12rem;
+        width: 12rem;
+        padding-top: 3.2rem;
+        
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight:400;
+        text-align: center;
+    }
+    
+    .summary {
+        border-radius: 0 2rem 2rem 0;
+        padding: 1rem 2rem;
+        height: 30rem;
+
+    }
+
+    .summary h2 {
+        padding: .85rem 0;
+    }
+
+    button {
+        margin-top: 1.6rem;
+        height: 3.5rem;
+        border-radius: 1.75rem;
+    }
+
+    button:hover {
+        background-image: linear-gradient(var(--result-bg1-grad),var(--result-bg2-grad)) ;
+        cursor: pointer;
+    }
+
+}
