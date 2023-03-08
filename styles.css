@@ -45,7 +45,7 @@ main {
 .results {
     background-image: linear-gradient(var(--result-bg1-grad),var(--result-bg2-grad)) ;
     color: var(--white);
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0rem 0rem 1.875rem 1.875rem;
     padding: 1.6rem;
     height: 22.25rem;
     display: flex;
@@ -178,7 +178,7 @@ button {
 
 /* FOOTER STYLING */
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: .6875rem; text-align: center; 
 }
 
 .attribution a { 
