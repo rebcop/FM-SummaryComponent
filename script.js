@@ -13,9 +13,9 @@ $.getJSON("data.json", (jsonData) => {
     
     for (let i = 0; i < jsonData.length; i++) {
 
-        const category = jsonData[i].category;
-        const score = jsonData[i].score;
-        const icon = jsonData[i].icon;
+        let category = jsonData[i].category;
+        let score = jsonData[i].score;
+        let icon = jsonData[i].icon;
 
         $(".categories").append(appendCategory(category,score,icon));
     }
